@@ -7,8 +7,8 @@ import random
 #and operator = not ((not p[i]) or (not q[i]))
 
 def and_test(x,y,z):
-    for i in range(10):
-        if q[i] == 1 and p[i] == 1 :
+    for i in range(len(x)):
+        if x[i] == 1 and y[i] == 1 :
             z.append(1)
         else:
             z.append(-1)
