@@ -44,7 +44,7 @@ r_not = [str(i) for i in r_not]
 r_or = [str(i) for i in r_or]
 
 for i in range(len(p)):
-   f_inp_not.write(p[i]+","+q[i]+'\n')
+   f_inp_not.write(p[i]+'\n')
    f_op_not.write(r_not[i]+'\n')
    f_inp_or.write(p[i]+","+q[i]+'\n')
    f_op_or.write(r_or[i]+'\n')
