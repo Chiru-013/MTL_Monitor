@@ -1,4 +1,21 @@
 import sys
+
+
+#True -> 1
+#False -> -1
+#Maybe -> 0
+
+#not -> !
+#or -> v
+#and -> ^
+#next -> 
+#box -> 
+#diamond -> 
+#until -> 
+
+
+
+
 class node:
     def __init__(self,val,left=None,right=None):
         self.val=val
