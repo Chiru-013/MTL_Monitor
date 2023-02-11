@@ -4,7 +4,7 @@ import random
 # Maybe -> 0
 # Fasle -> -1
 
-#and operator = not ((not p[i]) or (not q[i]))
+#next operator = Op
 
 def and_test(x,z):
     for i in range(len(x)):
