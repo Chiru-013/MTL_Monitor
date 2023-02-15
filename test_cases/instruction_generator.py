@@ -339,11 +339,10 @@ def inst_gen(x):
 
 exp = "( ( O ( A v B ) ) ) U C"
 pt = buildParseTree(exp)
-postorder(pt)  #defined and explained in the next section
+postorder(pt)
 f = open("instructions.txt","a")
 f.write("\n----------New Property:- " + exp +" -----------\n")
 f.close()
-# print(evaluate(pt))
 print(inst)
 inst = [char for char in inst if char != '']
 print(inst)
