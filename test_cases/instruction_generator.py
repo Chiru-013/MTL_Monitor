@@ -55,20 +55,6 @@ def buildParseTree(fexp):
     print("printed:" + currentTree.getRootVal())
     return eTree
 
-
-import operator
-def evaluate(parseTree):
-    opers = {'+':operator.add, '-':operator.sub, '*':operator.mul, '/':operator.truediv}
-
-    leftC = parseTree.getLeftChild()
-    rightC = parseTree.getRightChild()
-
-    if leftC and rightC:
-        fn = opers[parseTree.getRootVal()]
-        return fn(evaluate(leftC),evaluate(rightC))
-    else:
-        return parseTree.getRootVal()
-
 def postorder(tree):
     if tree != None:
         postorder(tree.getLeftChild())
@@ -286,7 +272,7 @@ def until_gen(a):
 
     return("until_gen("+a[0]+a[1]+")")
 
-def inst_choose(x):
+def inst_gen(x):
     ap=[]
     op=[]
     result = "-1"
@@ -361,6 +347,6 @@ f.close()
 print(inst)
 inst = [char for char in inst if char != '']
 print(inst)
-inst_choose(inst)
+inst_gen(inst)
 
 
